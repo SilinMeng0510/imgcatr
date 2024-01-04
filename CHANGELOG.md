@@ -17,3 +17,7 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 ## [0.1.3] - 2023-01-04
 
 - improve github workflow supporting multiplatform
+
+## [0.1.4] - 2023-01-04
+
+- Add workflow for cargo publish
