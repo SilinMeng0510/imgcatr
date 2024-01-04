@@ -42,7 +42,7 @@ There are some features that you can customize how you would like to display the
 With the preparation of the image, you can specify the output format with `-a` or `-ansi`, where Imgcatr has 4 available output formats: `truecolor`, `simple-black`, `simple-white`, `ascii`, and `no_ansi` (For Windows OS).
 
 <p align="center">
-  <img src="https://github.com/SilinMeng0510/imgcatr/blob/main/assets/Screenshot%202024-01-03%20at%2010.53.41%20PM.png" alt="running `imgcatr cat.png`" width=1000 height=700>
+  <img src="https://github.com/SilinMeng0510/imgcatr/blob/main/assets/outputs.png" alt="running `imgcatr cat.png`" width=1000 height=700>
 </p>
 
 ### Customized Size
@@ -58,7 +58,7 @@ The image ratio is preserved as default. And option `-f` or `-force` can force t
   <img src="https://github.com/SilinMeng0510/imgcatr/blob/main/assets/preserve-display.png" alt="running `imgcatr cat.png`" width=1000 height=300>
 </p>
 
-# Outlook
+# Comment
 ### Special Thanks
 This work is derived from an open-sourced project named [`termimage`](https://github.com/nabijaczleweli/termimage). Here, I'm offering my special thanks to the team.
 
