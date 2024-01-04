@@ -1,0 +1,42 @@
+name: Publish to Cargo
+
+on:
+ push:
+ branches: [ main ]
+
+jobs:
+ publish:
+ runs-on: ubuntu-latest
+
+ name: 'publish'
+
+ # Reference your environment variables
+ environment: cargo
+
+ steps:
+      - uses: actions/checkout@master
+
+ # Use caching to speed up your build
+      - name: Cache publish-action bin
+ id: cache-publish-action
+ uses: actions/cache@v3
+ env:
+ cache-name: cache-publish-action
+ with:
+ path: ~/.cargo
+ key: ${{ runner.os }}-build-${{ env.cache-name }}
+
+ # install publish-action by cargo in github action
+      - name: Install publish-action
+ if: steps.cache-publish-action.outputs.cache-hit != 'true'
+ run:
+ cargo install publish-action
+ 
+      - name: Run publish-action
+ run:
+ publish-action
+ env:
+ # This can help you tagging the github repository
+ GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+ # This can help you publish to crates.io
+ CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}

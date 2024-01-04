@@ -13,3 +13,7 @@ Note: In this file, do not use the hard wrap in the middle of a sentence for com
 ## [0.1.2] - 2023-01-04
 
 - initial released version 
+
+## [0.1.3] - 2023-01-04
+
+- improve github workflow supporting multiplatform
