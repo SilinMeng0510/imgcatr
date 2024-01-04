@@ -100,7 +100,7 @@ The image ratio is preserved as default. And option `-f` or `-force` can force t
   <img src="https://github.com/SilinMeng0510/imgcatr/blob/main/assets/preserve-display.png" alt="running `imgcatr cat.png`" width=1000 height=300>
 </p>
 
-# Comment
+# Additional Comments
 ### Special Thanks
 This work is derived from an open-sourced project named [`termimage`](https://github.com/nabijaczleweli/termimage). Here, I'm offering my special thanks to the team.
 
