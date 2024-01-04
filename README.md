@@ -10,13 +10,55 @@ A rust-based command-line command `imgcatr` to display images.
 
 # Install
 ### Crate.io
-Install from __Crate.io__, it's required to have [Cargo](https://www.rust-lang.org/tools/install) on your computer.
+__(Recommended)__ Install from __Crate.io__, it's required to have [Cargo](https://www.rust-lang.org/tools/install) on your computer.
 ```sh
 cargo install imgcatr
 ```
 ### On MacOS
+1. Open Terminal
+2. Use curl to Download the Release
 ```sh
-brew install imgcatr
+curl -L https://github.com/SilinMeng0510/imgcatr/releases/download/v0.1.4/imgcatr-x86_64-apple-darwin.tar.gz -o imgcatr-x86_64-apple-darwin.tar.gz
+```
+3. Extract the Tarball
+```sh
+tar -xzf imgcatr-x86_64-apple-darwin.tar.gz
+```
+4. Move the Binary to a bin Directory
+```sh
+mv imgcatr /usr/local/bin/
+```
+### On Linux
+1. Open Terminal
+2. Use curl to Download the Release
+```sh
+curl -L https://github.com/SilinMeng0510/imgcatr/releases/download/v0.1.4/imgcatr-x86_64-unknown-linux-gnu.tar.gz -o imgcatr-x86_64-unknown-linux-gnu.tar.gz
+```
+3. Extract the Tarball
+```sh
+tar -xzf imgcatr-x86_64-unknown-linux-gnu.tar.gz
+```
+4. Move the Binary to a bin Directory
+```sh
+sudo mv imgcatr /usr/local/bin/
+```
+### On Windows
+1. Using PowerShell (Windows 10 and later):
+2. Use the Invoke-WebRequest cmdlet to download:
+```sh
+Invoke-WebRequest -Uri https://github.com/SilinMeng0510/imgcatr/releases/download/v0.1.4/imgcatr-x86_64-pc-windows-msvc.zip -OutFile imgcatr-windows.zip
+```
+3. Extract zip file
+```sh
+Expand-Archive -LiteralPath imgcatr-windows.zip -DestinationPath imgcatr-windows
+```
+__(Optional)__ Create a directory (if you don't already have one):
+```sh
+New-Item -ItemType Directory -Force -Path "C:\Tools"
+```
+Move `imgcatr.exe`:
+```sh
+Move-Item imgcatr-windows\imgcatr.exe C:\Tools\
 ```
  
 
