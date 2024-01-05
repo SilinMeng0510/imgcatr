@@ -1,7 +1,7 @@
 # ImgCatr 
 [![Licence](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE) [![Crates.io version](https://img.shields.io/crates/v/imgcatr)](https://crates.io/crates/imgcatr)
 
-A rust-based command-line command `imgcatr` to display images.
+A CLI application `imgcatr` for displaying images.
 
 <p align="center">
   <img src="https://github.com/SilinMeng0510/imgcatr/blob/main/assets/sample.png" alt="running `imgcatr cat.png`" width=506 height=620>
